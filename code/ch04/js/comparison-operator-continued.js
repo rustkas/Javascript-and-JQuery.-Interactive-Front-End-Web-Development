@@ -4,8 +4,13 @@ const highScore1 = 75; // Рекорд за первый этап
 const highScore2 = 95; // Рекорд за второй этап
 
 // Проверяем, превышают ли набранные очки актуальные рекорды
-const comparison = (score1 + score2) > (highScore1 + highScore2);
+let comparison;
+if( (score1 + score2) > (highScore1 + highScore2) ) {
+	comparison = 'Да.';
+}else {
+	comparison = 'Нет.';	
+}
 
 // Выводим сообщение на страницу
 const el = document.getElementById('answer');
-el.innerHTML = 'Новый рекорд: ' + comparison;
+el.innerHTML = `Есть новый рекорд? ${comparison}`;

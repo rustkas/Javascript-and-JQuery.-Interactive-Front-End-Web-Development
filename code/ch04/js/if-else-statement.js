@@ -1,14 +1,14 @@
-﻿var pass = 50;      // Проходной балл
-var score = 75;    // Актуальный балл
-var msg;            // Сообщение
+﻿const pass = 50;      // Проходной балл
+const score = 75;    // Актуальный балл
+let msg;            // Сообщение
 
 // Выбор сообщения для вывода на экран в зависимости от количества баллов
 
 if (score > pass) {
-  msg = 'Поздравления, пройдено!';
+  msg = 'Поздравляем! Переходите к следующему этапу!';
 } else {
-  msg = 'Повторите попытку!';
+  msg = 'Попробуйте снова...';
 }
 
-var el = document.getElementById('answer');
+const el = document.getElementById('answer');
 el.textContent = msg;

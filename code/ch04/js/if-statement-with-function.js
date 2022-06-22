@@ -1,5 +1,5 @@
-﻿var score = 75;    // Балл
-var msg = '';      // Сообщение
+﻿const score = 75;    // Балл
+let msg = '';      // Сообщение
 
 function congratulate() {
   msg += 'Поздравляем! ';
@@ -10,5 +10,5 @@ if (score >= 50) {  // Если балл составляет 50 или выше
   msg += 'Переходите к следующему этапу.';
 }
 
-var el = document.getElementById('answer');
+const el = document.getElementById('answer');
 el.innerHTML = msg;

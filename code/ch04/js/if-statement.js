@@ -1,1 +1,1 @@
-﻿var score = 75;     // Баллvar msg;            // Сообщениеif (score >= 50) {  // Если балл составляет 50 или выше  msg = 'Поздравляем!';  msg += ' Переходите к следующему этапу.'; }var el = document.getElementById('answer');el.textContent = msg;
+﻿const score = 75;     // Баллlet msg;            // Сообщениеif (score >= 500) {  // Если балл составляет 50 или выше  msg = 'Поздравляем! Переходите к следующему этапу.'; }else {	msg = 'Попробуйте ещё раз.'; }	const el = document.getElementById('answer');el.textContent = msg;

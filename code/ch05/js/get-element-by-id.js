@@ -1,0 +1,1 @@
+﻿// Выделяем элемент и сохраняем его в переменной.const el = document.getElementById('one');// Изменяем значение атрибута class.setTimeout(function() {	el.className = 'cool';}, 2000);
