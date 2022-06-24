@@ -1,0 +1,1 @@
+﻿$(function() {    setTimeout(function(){	const $p = $('p');	// Клонируем элемент p и добавляем его после элемента h2.	const $clonedQuote = $p.clone();	$p.remove();	$clonedQuote.insertAfter('h2');	// Удаляем первый элемент и добавляем в конец списка.	const $moveItem = $('#one').detach();	$moveItem.appendTo('ul');    }, 3000);  });
